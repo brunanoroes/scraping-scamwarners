@@ -7,7 +7,7 @@ from deep_translator import GoogleTranslator
 
 # Configurações
 BASE_URL = "https://www.scamwarners.com/forum/"
-START_URL = "https://www.scamwarners.com/forum/viewforum.php?f=13"
+START_URL = "https://www.scamwarners.com/forum/viewforum.php?f=6"
 
 def traduzir_texto(texto):
     """Traduz o texto de inglês para português em blocos para evitar erros de limite."""
@@ -90,7 +90,7 @@ def crawler_scamwarners(limite_linhas):
 
 def salvar_formatado(dados):
     df = pd.DataFrame(dados)
-    nome_arquivo = "scamwarners_traduzido.xlsx"
+    nome_arquivo = "lojas_falsas_traduzido.xlsx"
     
     # Criar um escritor do Excel com formatação
     with pd.ExcelWriter(nome_arquivo, engine='openpyxl') as writer:
