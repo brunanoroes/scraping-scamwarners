@@ -1,0 +1,9 @@
+# Arquivos temporarios do Excel
+~$*
+
+# Ambientes virtuais Python
+.venv/
+__pycache__/
+
+# Configuracao de ferramentas locais
+.claude/
